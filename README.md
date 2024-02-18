@@ -1,7 +1,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Node version 18.16.0 should be installed and used
 
 ## Installation
 
@@ -58,6 +58,19 @@ UserFilter accepts Username example rauf@gmail.com
 Limit accepts No of Maximum rows you want example 5
 Off accepts No Of Starting Index example 0
 status can be Completed or Pending
+
+Design Pattern
+I have used multiple design pattern in this solution , modular structure is made , I have made 4 diffierent modules these are users module,
+task module, invitation module and typeorm module.
+
+MVC (Model-View-Controller):
+The MVC pattern is fundamental to the structure of the solution. Controllers handle incoming requests, interact with services to process data, and return responses. Services contain the business logic, perform operations on data, and interact with repositories. Models represent the data structure and are used to define entities such as users, tasks, and invitations.
+
+Dependency Injection (DI):
+Dependency Injection is extensively used to manage the dependencies between various components of the application. Services and other dependencies are injected into controllers and other components, promoting modularity and testability.
+
+Repository Pattern:
+The repository pattern is utilized, particularly in database interactions.
 
 
 
